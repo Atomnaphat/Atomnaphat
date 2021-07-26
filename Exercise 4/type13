@@ -1,0 +1,16 @@
+#13
+while True:
+ a=input("username :")
+ b=input("password :")
+ if a == "admin" and b != "1234":
+  print("Your password is wrong")
+ elif a != "admin" and b == "1234":
+  print("Your password is wrong")
+ elif a != "admin" and b != "1234":
+  print("Your password is wrong")
+ elif a == "admin" and b == "1234":
+  c=input("Enter your new username :")
+  d=input("Enter your new password :")
+  print("your new username:",c)
+  print("your new password:",d)
+  break
