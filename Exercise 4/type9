@@ -1,0 +1,9 @@
+#9
+x = int(input("Enter your number :"))
+print("input :",x)
+for i in range(x):
+  for y in range(x-i-1):
+    print(" ",end="")
+  for z in range(2*i+1):
+    print("*",end="")
+  print()
