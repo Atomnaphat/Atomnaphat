@@ -1,0 +1,6 @@
+#8
+a = int(input('Enter number: '))
+for row in range(a):
+  for column in range(a-row):
+    print('*', end='')
+  print()
