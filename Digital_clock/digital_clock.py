@@ -2,7 +2,7 @@ import tkinter as tk
 from time import strftime
 
 
-def ธีม_แสง():
+def heme_light():
     frame = tk.Frame(root, bg="white")
     frame.place(relx=0.1, rely=0.1, relwidth=0.8, relheight=0.8)
     lbl_1 = tk.Label(frame, font=('calibri', 40, 'bold'),
@@ -16,7 +16,7 @@ def ธีม_แสง():
     time()
 
 
-def ธีม_มืด():
+def heme_dark():
     frame = tk.Frame(root, bg="#22478a")
     frame.place(relx=0.1, rely=0.1, relwidth=0.8, relheight=0.8)
     lbl_2 = tk.Label(frame, font=('calibri', 40, 'bold'),
@@ -49,8 +49,8 @@ time()
 
 menubar = tk.Menu(root)
 theme_menu = tk.Menu(menubar, tearoff=0)
-theme_menu.add_command(label="Light", command=ธีม_แสง)
-theme_menu.add_command(label="Dark", command=ธีม_มืด)
+theme_menu.add_command(label="Light", command=theme_light)
+theme_menu.add_command(label="Dark", command=theme_dark)
 menubar.add_cascade(label="Theme", menu=theme_menu)
 root.config(menu=menubar)
 root.mainloop()
